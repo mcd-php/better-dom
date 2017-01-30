@@ -325,7 +325,7 @@
 
 }(typeof window !== "undefined" ? window : this, document));
 
-/*!
+/**!
  * https://github.com/es-shims/es5-shim
  * @license es5-shim Copyright 2009-2015 by contributors, MIT License
  * see https://github.com/es-shims/es5-shim/blob/master/LICENSE
@@ -1247,7 +1247,7 @@ var sortIgnoresNonFunctions = (function () {
         [1, 2].sort(null);
         [1, 2].sort({});
         return true;
-    } catch (e) { /**/ }
+    } catch (e) { /* */ }
     return false;
 }());
 var sortThrowsOnRegex = (function () {
@@ -1255,7 +1255,7 @@ var sortThrowsOnRegex = (function () {
     try {
         [1, 2].sort(/a/);
         return false;
-    } catch (e) { /**/ }
+    } catch (e) { /* */ }
     return true;
 }());
 var sortIgnoresUndefined = (function () {
@@ -1263,7 +1263,7 @@ var sortIgnoresUndefined = (function () {
     try {
         [1, 2].sort(undefined);
         return true;
-    } catch (e) { /**/ }
+    } catch (e) { /* */ }
     return false;
 }());
 defineProperties(ArrayPrototype, {
